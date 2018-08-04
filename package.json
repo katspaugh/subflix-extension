@@ -1,0 +1,37 @@
+{
+  "name": "Subflix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --progress --colors --watch",
+    "prod": "eslint src && NODE_ENV='production' webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katspaugh/fluentcards-extension.git"
+  },
+  "author": "katspaugh@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/katspaugh/fluentcards-extension/issues"
+  },
+  "homepage": "https://github.com/katspaugh/fluentcards-extension#readme",
+  "devDependencies": {
+    "@types/chrome": "*",
+    "babel-core": "*",
+    "babel-eslint": "*",
+    "babel-loader": "*",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*",
+    "copy-webpack-plugin": "*",
+    "css-loader": "*",
+    "eslint": "*",
+    "eslint-plugin-react": "*",
+    "style-loader": "*",
+    "webpack": "*"
+  },
+  "dependencies": {
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Subflix",
+  "version": "0.0.1",
+  "description": "Subtitles navigation",
+
+  "browser_action": {
+    "default_icon": {
+      "19": "Fluentcards48.png",
+      "38": "Fluentcards48.png"
+    },
+    "default_title": "Subflix"
+  },
+
+  "permissions": [ "activeTab" ],
+
+  "minimum_chrome_version": "20",
+
+  "background" : {
+    "scripts" : [ "background.js" ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.netflix.com/watch/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+
+  "icons": {
+    "16": "Fluentcards16.png",
+    "48": "Fluentcards48.png",
+    "128": "Fluentcards128.png",
+    "256": "Fluentcards256.png"
+  },
+
+  "manifest_version": 2
+}
